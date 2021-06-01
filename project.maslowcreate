@@ -98,6 +98,19 @@
             ]
         },
         {
+            "atomType": "Stl",
+            "name": "Stl",
+            "x": 0.5307467057101025,
+            "y": 0.20229007633587787,
+            "uniqueID": 850922,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/323166/798366Difference"
+                }
+            ]
+        },
+        {
             "atomType": "Difference",
             "name": "Difference",
             "x": 0.4443631039531478,
@@ -153,7 +166,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 5.5
+                    "ioValue": 5.95
                 }
             ]
         },
@@ -230,6 +243,13 @@
             "ap2Primary": false,
             "ap1ID": 798366,
             "ap2ID": 413149
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 798366,
+            "ap2ID": 850922
         },
         {
             "ap1Name": "geometry",
