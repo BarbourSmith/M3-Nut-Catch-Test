@@ -8,6 +8,75 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.11420204978038066,
+            "y": 0.3473282442748092,
+            "uniqueID": 200782,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.26281112737920936,
+            "y": 0.3015267175572519,
+            "uniqueID": 487746,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/323166/200782Rectangle"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "M3 Locknut",
+            "x": 0.10907759882869693,
+            "y": 0.7099236641221374,
+            "uniqueID": 286060,
+            "projectID": "278794657",
+            "ioValues": [],
+            "simplify": false
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.23865300146412882,
+            "y": 0.7175572519083969,
+            "uniqueID": 451543,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/323166/286060GitHubMolecule"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -16,7 +85,22 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 200782,
+            "ap2ID": 487746
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 286060,
+            "ap2ID": 451543
+        }
+    ],
     "fileTypeVersion": 1,
     "simplify": false,
     "filetypeVersion": 1,
